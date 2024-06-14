@@ -22,20 +22,20 @@ public:
 	Node* ROOT;
 
 	BinaryTree() {
-		ROOT = nullptr;  
+		ROOT = NULL;  
 	}
 
 	void insert(string element) {
-		Node* newNode = new Node(element, nullptr, nullptr); 
+		Node* newNode = new Node(element, NULL, NULL); 
 		newNode->info = element; 
-		newNode->leftchild = nullptr; 
-		newNode->rightchild = nullptr; 
+		newNode->leftchild = NULL; 
+		newNode->rightchild = NULL; 
 
+		Node* parent = NULL;
+		Node* currentNode = NULL;
+		search(element, parent, currentNode);
 	}
 };
 
-int main()
-{
-    std::cout << "Hello World!\n";
-}
+
 
